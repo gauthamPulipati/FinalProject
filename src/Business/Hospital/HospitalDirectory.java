@@ -39,6 +39,5 @@ public class HospitalDirectory {
     public ArrayList<Hospital> getHospitals() {
         return hospitals;
     }
-
     
 }
