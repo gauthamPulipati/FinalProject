@@ -5,10 +5,27 @@
  */
 package Business.RetailStore;
 
+import Business.Role.Role;
+import java.util.ArrayList;
+
 /**
  *
  * @author gauthamrajsimhapulipati
  */
 public class RetailStore {
+  
+    private String storeName;
     
+    public RetailStore(String storeName){
+        super();
+        this.storeName = storeName;
+    }
+
+    public String getStoreName() {
+        return storeName;
+    }
+
+    public ArrayList<Role> getSupportedRole() {
+        return null;
+    }
 }

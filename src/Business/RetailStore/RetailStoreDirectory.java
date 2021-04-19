@@ -5,10 +5,38 @@
  */
 package Business.RetailStore;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author gauthamrajsimhapulipati
  */
 public class RetailStoreDirectory {
+    private ArrayList<RetailStore> stores;
     
+    public RetailStore createHospital(String name){
+        
+        for (RetailStore rstore:stores){
+            if(rstore.getStoreName().equals(name)){
+                return null;
+            }
+        }
+        
+        RetailStore rstore = new RetailStore(name);
+        this.stores.add(rstore);
+        return rstore;
+    }
+    
+    public void deleteHospital(String name){
+        for (RetailStore rstore:stores){
+            if(rstore.getStoreName().equals(name)){
+                stores.remove(rstore);
+                break;
+            }
+        }
+    }
+
+    public ArrayList<RetailStore> getHospitals() {
+        return stores;
+    }
 }
