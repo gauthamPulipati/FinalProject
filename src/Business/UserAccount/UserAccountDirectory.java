@@ -1,5 +1,6 @@
 /*
- * To change this template, choose Tools | Templates
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 package Business.UserAccount;
@@ -10,11 +11,10 @@ import java.util.ArrayList;
 
 /**
  *
- * @author raunak
+ * @author aksha
  */
 public class UserAccountDirectory {
-    
-    private ArrayList<UserAccount> userAccountList;
+ private ArrayList<UserAccount> userAccountList;
 
     public UserAccountDirectory() {
         userAccountList = new ArrayList();
